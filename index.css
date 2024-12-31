@@ -10,8 +10,9 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    box-sizing: border-box;
 }
-.container{
+body{
     width: 100dvw;
     height: 100dvh;
     display: flex;
@@ -43,6 +44,7 @@
     background: white;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+  
 }
 .intro{
     text-transform: uppercase;
@@ -99,7 +101,37 @@
     font-family: 'mont';
     color: white;
 }
+.cart:hover{
+    background-color: hsl(212, 21%, 14%);
+}
 
+@media (max-width:614px) {
+    body{
+      height: fit-content;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+       /* height: max-content;  */
+        margin: auto;
+        position: relative;
+        top: 10px;
+        width: 90%;
+        border-radius: 20px;
+    }
+    .left img{
+         border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        height: 400px;
+    }
+    
+    .right{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        padding-bottom: 50px;
+    }
+    
+}
 
 
 
